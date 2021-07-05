@@ -49,7 +49,6 @@ export const FooterLogo = styled(Link)`
 
 export const SectionHeader = styled.h4`
   padding-bottom: 1rem;
-  text-decoration: underline;
 `;
 
 export const SectionPara = styled.p`
