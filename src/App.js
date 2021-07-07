@@ -5,6 +5,7 @@ import { Products } from "./components/Products";
 import { GlobalStyles } from "./globalStyles";
 import { ProductsData } from "./components/Products/data";
 import Featured from "./components/Featured";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Hero />
       <Products heading={"Choose your favourite"} data={ProductsData} />
       <Featured />
+      <Footer />
     </Router>
   );
 }

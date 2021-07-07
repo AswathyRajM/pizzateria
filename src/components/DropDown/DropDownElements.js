@@ -13,8 +13,8 @@ export const DropDownContainer = styled.aside`
   top: 4rem;
   transition: 0.3s ease-in-out;
   border-radius: 2px;
-
   right: 9.5rem;
+
   @media screen and (max-width: 400px) {
     width: 100%;
   }
@@ -26,6 +26,7 @@ export const DropDownMenu = styled.div`
   grid-template-rows: repeat(3, 2rem);
   text-align: center;
   padding-top: 1rem;
+
   @media screen and (max-width: 480px) {
     grid-template-rows: repeat(3, 60px);
   }
