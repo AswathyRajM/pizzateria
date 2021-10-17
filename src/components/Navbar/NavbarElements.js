@@ -17,6 +17,9 @@ export const NavLink = styled(Link)`
     align-items: center; 
     text-decoration: none;
     cursor: pointer;
+    position: absolute;
+    left: 0;
+    transform: translate(50%,15%);
     
     @media screen and (max-width: 400px){
         position: absolute;
@@ -34,12 +37,12 @@ export const NavIcon = styled.div`
     color: #fff;
 
     p{
-        transform: translate(-175%,100%);
+        transform: translate(-250%,100%);
         fort-weight: bold;
     }
 `;
 
 export const Bars = styled(RiCake3Fill)`
     font-size: 2rem;
-    transform: translate(-50%,-15%);
+    transform: translate(-100%,-15%);
 `;

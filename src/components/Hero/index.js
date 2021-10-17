@@ -6,10 +6,10 @@ export const  Hero = () => {
     return (
         <HeroContainer>
             <Navbar/>
-            <HeroContent>
+            <HeroContent> 
                 <HeroItems>
-                    <HeroH1>Home Made Delicious Bakery</HeroH1>
-                    <HeroP>Delicious Sweets</HeroP>
+                    <HeroH1>Home Made Sweets</HeroH1>
+                    <HeroP>Delicious Bakery food</HeroP>
                     <HeroBtn>Place Order</HeroBtn>
                 </HeroItems>
             </HeroContent>
