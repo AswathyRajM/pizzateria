@@ -1,26 +1,30 @@
 import React from "react";
-import { SidebarConatiner, SidebarMenu, SidebarLink } from "./DropDownElements";
+import {
+  DropDownContainer,
+  DropDownMenu,
+  DropDownLInk,
+} from "./DropDownElements";
 
 export const DropDown = ({ handleDropdown, handleDropdownLeave }) => {
   return (
-    <SidebarConatiner
+    <DropDownContainer
       onMouseEnter={handleDropdown}
       onMouseLeave={handleDropdownLeave}
     >
-      <SidebarMenu>
-        <SidebarLink to="/">
+      <DropDownMenu>
+        <DropDownLInk to="/">
           <p>Ice Creams</p>
-        </SidebarLink>
-        <SidebarLink to="/">
+        </DropDownLInk>
+        <DropDownLInk to="/">
           <p>Burgers</p>
-        </SidebarLink>
-        <SidebarLink to="/">
+        </DropDownLInk>
+        <DropDownLInk to="/">
           <p>Drinks</p>
-        </SidebarLink>
-        <SidebarLink to="/">
+        </DropDownLInk>
+        <DropDownLInk to="/">
           <p>View All</p>
-        </SidebarLink>
-      </SidebarMenu>
-    </SidebarConatiner>
+        </DropDownLInk>
+      </DropDownMenu>
+    </DropDownContainer>
   );
 };

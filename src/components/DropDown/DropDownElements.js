@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-export const SidebarConatiner = styled.aside`
+export const DropDownContainer = styled.aside`
   position: fixed;
   z-index: 999;
   width: 10rem;
@@ -20,18 +20,18 @@ export const SidebarConatiner = styled.aside`
   }
 `;
 
-export const SidebarMenu = styled.div`
+export const DropDownMenu = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 2rem);
   text-align: center;
-
+  padding-top: 1rem;
   @media screen and (max-width: 480px) {
     grid-template-rows: repeat(3, 60px);
   }
 `;
 
-export const SidebarLink = styled(Link)`
+export const DropDownLInk = styled(Link)`
   display: flex;
   align-items: center;
   justify-content: center;
