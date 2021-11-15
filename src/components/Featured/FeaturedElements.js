@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import FeaturedPie from "../../images/featured-pie.jpg";
+import FeaturedPie from "../../images/featured.jpg";
 
 export const FeatureContainer = styled.div`
   background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),

@@ -1,23 +1,23 @@
 export const ProductsData = [
-    {
-        img: 'https://www.cubesnjuliennes.com/wp-content/uploads/2020/11/Apple-Pie.jpg',
-        alt: 'product1',
-        name: 'Apple pie',
-        desc: 'double-crusted, with pastry both above and below the filling',
-        price: '$19.99',
-    },
-    {
-        img: 'https://www.cubesnjuliennes.com/wp-content/uploads/2020/11/Apple-Pie.jpg',
-        alt: 'product1',
-        name: 'Apple pie',
-        desc: 'double-crusted, with pastry both above and below the filling',
-        price: '$19.99',
-    },
-    {
-        img: 'https://www.cubesnjuliennes.com/wp-content/uploads/2020/11/Apple-Pie.jpg',
-        alt: 'product1',
-        name: 'Apple pie',
-        desc: 'double-crusted, with pastry both above and below the filling',
-        price: '$19.99',
-    },
+  {
+    img: "images/pepperoni.jpg",
+    alt: "pizza",
+    name: "Pepperoni Pizza",
+    desc: "Pizza sauce, mozzarella, pepperoni",
+    price: "$9.99",
+  },
+  {
+    img: "images/supreme.jpg",
+    alt: "pizza1",
+    name: "Supreme Pizza",
+    desc: "Pizza sauce, mozzarella, bacon, beef mince, pepperoni",
+    price: "$9.99",
+  },
+  {
+    img: "images/hawaiian.jpg",
+    alt: "pizza2",
+    name: "Hawaiian ",
+    desc: "Pizza sauce, mozzarella, ham, pineapple",
+    price: "$9.99",
+  },
 ];
