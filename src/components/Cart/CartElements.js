@@ -9,15 +9,29 @@ export const CartContainer = styled.aside`
   height: 100%;
   background: #ffc500;
   display: grid;
-  align-items: center;
+  align-items: flex-start;
   top: 0;
   transition: 0.3s ease-in-out;
   right: ${({ openCart }) => (openCart ? "0" : "-2000px")};
 
   @media screen and (max-width: 400px) {
     width: 100%;
+    height: 100%;
   }
+`;
 
+export const Container = styled.div`
+  width: 350px;
+  height: auto;
+  background: #ffc500;
+  display: grid;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+
+  @media screen and (max-width: 400px) {
+    width: 100%;
+    height: 100%;
+  }
 `;
 
 export const CloseIcon = styled(FaTimes)`
@@ -26,7 +40,7 @@ export const CloseIcon = styled(FaTimes)`
 
 export const Icon = styled.div`
   position: absolute;
-  top: 1.1rem;
+  top: 2rem;
   right: 1.5rem;
   background: transparent;
   border: transparent;
@@ -36,32 +50,31 @@ export const Icon = styled.div`
 `;
 
 export const CartItems = styled.div`
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 80px);
-  text-align: center;
-
-  @media screen and (max-width: 480px) {
-    grid-template-rows: repeat(3, 60px);
-  }
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 0;
+  width: 100%;
 `;
 
-export const CartItem = styled.p`
-  display: flex;
-  align-items: center;
-  justify-content: center;
+export const CartHeading = styled.h4`
   font-size: 1.5rem;
-  text-decoration: none;
-  list-style: none;
-  transition: 02s ease-in-out;
-  text-decoration: none;
-  color: #fff;
-  cursor: pointer;
+  font-weight: 400;
+  margin-top: 2rem;
+  margin-left: 2rem;
+`;
 
-  &:hover {
-    color: #e31837;
-    transition: 02s ease-in-out;
-  }
+export const ItemName = styled.p`
+  font-size: 1.1rem;
+  color: #000;
+  white-space: nowrap;
+  width: 12rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+`;
+
+export const CartItem = styled.div`
+  display: flex;
+  justify-content: space-around;
 `;
 
 export const CartButton = styled.div`
@@ -80,6 +93,7 @@ export const CartBtnRoute = styled(Link)`
   text-decoration: none;
   cursor: pointer;
   transition: 0.2s ease-in-out;
+  margin: 3rem 0;
 
   &:hover {
     transition: 0.2s ease-in-out;

@@ -42,7 +42,7 @@ export const SidebarLink = styled(Link)`
   text-decoration: none;
   color: #000;
   cursor: pointer;
-  padding-top: 1rem;
+  padding-top: 2rem;
 
   &:hover {
     color: #e31837;
@@ -65,6 +65,6 @@ export const SidebarLink = styled(Link)`
   }
 
   p:last-child {
-    padding: 1rem;
+    padding-bottom: 1rem;
   }
 `;
