@@ -1,7 +1,7 @@
 import React from "react";
-import { SidebarConatiner, SidebarMenu, SidebarLink } from "./SidebarElements";
+import { SidebarConatiner, SidebarMenu, SidebarLink } from "./DropDownElements";
 
-export const Sidebar = ({ handleDropdown, handleDropdownLeave }) => {
+export const DropDown = ({ handleDropdown, handleDropdownLeave }) => {
   return (
     <SidebarConatiner
       onMouseEnter={handleDropdown}

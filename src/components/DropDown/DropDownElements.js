@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export const SidebarConatiner = styled.aside`
   position: fixed;
   z-index: 999;
-  width: 8rem;
+  width: 10rem;
   height: auto;
   background: #ffc500;
   display: grid;
@@ -12,8 +12,9 @@ export const SidebarConatiner = styled.aside`
   justify-content: center;
   top: 4rem;
   transition: 0.3s ease-in-out;
+  border-radius: 2px;
 
-  right: 5vw;
+  right: 9.5rem;
   @media screen and (max-width: 400px) {
     width: 100%;
   }

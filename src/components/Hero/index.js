@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Cart } from "../Cart";
 import { Navbar } from "../Navbar";
-import { Sidebar } from "../Sidebar";
+import { DropDown } from "../DropDown";
 import {
   HeroContainer,
   HeroContent,
@@ -48,7 +48,7 @@ export const Hero = () => {
         handleCart={handleCart}
       />
       {openMenu ? (
-        <Sidebar
+        <DropDown
           handleDropdown={handleDropdown}
           handleDropdownLeave={handleDropdownLeave}
         />
