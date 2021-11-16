@@ -1,28 +1,28 @@
 import React from "react";
 import {
-  SidebarConatiner,
+  CartContainer,
   Icon,
   CloseIcon,
-  SidebarMenu,
-  SidebarLink,
-  SideBtnWrap,
-  SidebarRoute,
+  CartItems,
+  CartItem,
+  CartButton,
+  CartBtnRoute,
 } from "./CartElements";
 
-export const Cart = ({ handleCart, openCart }) => {
+export const Cart = ({ openCart, handleCart }) => {
   return (
-    <SidebarConatiner openCart={openCart} onClick={handleCart}>
+    <CartContainer openCart={openCart} onClick={handleCart}>
       <Icon onClick={handleCart}>
         <CloseIcon />
       </Icon>
-      <SidebarMenu>
-        <SidebarLink to="/">Cakes</SidebarLink>
-        <SidebarLink to="/">Pies</SidebarLink>
-        <SidebarLink to="/">Cookies</SidebarLink>
-      </SidebarMenu>
-      <SideBtnWrap>
-        <SidebarRoute to="/">View All</SidebarRoute>
-      </SideBtnWrap>
-    </SidebarConatiner>
+      <CartItems>
+        <CartItem to="/">Cakes</CartItem>
+        <CartItem to="/">Pies</CartItem>
+        <CartItem to="/">Cookies</CartItem>
+      </CartItems>
+      <CartButton>
+        <CartBtnRoute to="/">View All</CartBtnRoute>
+      </CartButton>
+    </CartContainer>
   );
 };

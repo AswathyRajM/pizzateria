@@ -52,14 +52,28 @@ export const SidebarLink = styled(Link)`
   font-size: 1.5rem;
   text-decoration: none;
   list-style: none;
-  transition: 02s ease-in-out;
+  transition: 0.2s ease-in-out;
   text-decoration: none;
   color: #000;
   cursor: pointer;
 
   &:hover {
     color: #e31837;
-    transition: 02s ease-in-out;
+    transition: 0.2s ease-in-out;
+  }
+
+  p:after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width 0.2s ease, background-color 0.3s ease;
+  }
+  p:hover:after {
+    width: 100%;
+    background: #e31837;
   }
 `;
 

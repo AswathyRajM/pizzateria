@@ -16,9 +16,15 @@ export const Sidebar = ({ handleMenu, openMenu }) => {
         <CloseIcon />
       </Icon>
       <SidebarMenu>
-        <SidebarLink to="/">Cakes</SidebarLink>
-        <SidebarLink to="/">Pies</SidebarLink>
-        <SidebarLink to="/">Cookies</SidebarLink>
+        <SidebarLink to="/">
+          <p>Ice Creams</p>
+        </SidebarLink>
+        <SidebarLink to="/">
+          <p>Burgers</p>
+        </SidebarLink>
+        <SidebarLink to="/">
+          <p>Drinks</p>
+        </SidebarLink>
       </SidebarMenu>
       <SideBtnWrap>
         <SidebarRoute to="/">View All</SidebarRoute>

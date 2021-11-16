@@ -1,20 +1,32 @@
 import React from "react";
-import { Bars, Nav, NavIcon, NavLink, Cart, Menu } from "./NavbarElements";
+import { Bars, Nav, NavLogo, NavLink, NavLinks } from "./NavbarElements";
 
 export const Navbar = ({ handleMenu, handleCart }) => {
   return (
     <>
       <Nav>
-        <NavLink to="/">Bakery</NavLink>
-        <NavIcon>
-          <div onClick={handleMenu}>
-            <p>Menu</p>
-          </div>
+        <NavLogo to="/">Bakery</NavLogo>
+        <NavLinks>
+          <NavLink to="/">
+            <div>
+              <p>Orders</p>
+            </div>
+          </NavLink>
 
-          <div onClick={handleCart}>
-            <Bars />
-          </div>
-        </NavIcon>
+          <NavLink to="/">
+            <div onClick={handleMenu}>
+              <p>Menu</p>
+            </div>
+          </NavLink>
+
+          <NavLink to="/">
+            <div onClick={handleCart}>
+              <p>
+                <Bars />
+              </p>
+            </div>
+          </NavLink>
+        </NavLinks>
       </Nav>
     </>
   );

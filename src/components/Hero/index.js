@@ -27,9 +27,9 @@ export const Hero = () => {
 
   return (
     <HeroContainer>
-      <Navbar handleMenu={handleMenu} />
+      <Navbar handleMenu={handleMenu} handleCart={handleCart} />
       <Sidebar openMenu={openMenu} handleMenu={handleMenu} />
-      <Cart handleCart={handleCart} handleMenu={handleMenu} />
+      <Cart openCart={openCart} handleCart={handleCart} />
       <HeroContent>
         <HeroItems>
           <HeroH1>Home Made Sweets</HeroH1>

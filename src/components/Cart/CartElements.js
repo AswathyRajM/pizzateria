@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
 
-export const SidebarConatiner = styled.aside`
+export const CartContainer = styled.aside`
   position: fixed;
   z-index: 999;
   width: 350px;
@@ -12,7 +12,7 @@ export const SidebarConatiner = styled.aside`
   align-items: center;
   top: 0;
   transition: 0.3s ease-in-out;
-  right: ${({ openMenu }) => (openMenu ? "0" : "-1000px")};
+  right: ${({ openCart }) => (openCart ? "0" : "-2000px")};
 
   @media screen and (max-width: 400px) {
     width: 100%;
@@ -34,7 +34,7 @@ export const Icon = styled.div`
   outline: none;
 `;
 
-export const SidebarMenu = styled.div`
+export const CartItems = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 80px);
@@ -45,7 +45,7 @@ export const SidebarMenu = styled.div`
   }
 `;
 
-export const SidebarLink = styled(Link)`
+export const CartItem = styled(Link)`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,12 +63,12 @@ export const SidebarLink = styled(Link)`
   }
 `;
 
-export const SideBtnWrap = styled.div`
+export const CartButton = styled.div`
   display: flex;
   justify-content: center;
 `;
 
-export const SidebarRoute = styled(Link)`
+export const CartBtnRoute = styled(Link)`
   background: #e31837;
   white-space: nowrap;
   padding: 16px 64px;
