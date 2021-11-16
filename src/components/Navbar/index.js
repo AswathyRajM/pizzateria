@@ -5,7 +5,7 @@ export const Navbar = ({ handleMenu, handleCart, handleMenuLeave }) => {
   return (
     <>
       <Nav>
-        <NavLogo to="/">Bakery</NavLogo>
+        <NavLogo to="/">Pizzateria</NavLogo>
         <NavLinks>
           <NavLink to="/">
             <div>

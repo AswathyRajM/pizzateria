@@ -59,8 +59,8 @@ export const Hero = () => {
       <Cart openCart={openCart} handleCart={handleCart} />
       <HeroContent>
         <HeroItems>
-          <HeroH1>Home Made Sweets</HeroH1>
-          <HeroP>Delicious Bakery food</HeroP>
+          <HeroH1>Yummy Pizza</HeroH1>
+          <HeroP>All You Need is Love & Pizza</HeroP>
           <HeroBtn>Place Order</HeroBtn>
         </HeroItems>
       </HeroContent>
