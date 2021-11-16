@@ -17,7 +17,12 @@ export const Hero = () => {
 
   const handleMenu = () => {
     if (openCart) setCartOpen(false);
-    setMenuOpen(!openMenu);
+    setMenuOpen(true);
+  };
+
+  const handleMenuLeave = () => {
+    if (openCart) setCartOpen(false);
+    setMenuOpen(false);
   };
 
   const handleCart = () => {
@@ -25,10 +30,32 @@ export const Hero = () => {
     setCartOpen(!openCart);
   };
 
+  const handleDropdown = () => {
+    if (openCart) setCartOpen(false);
+    setMenuOpen(true);
+  };
+
+  const handleDropdownLeave = () => {
+    if (openCart) setCartOpen(false);
+    setMenuOpen(false);
+  };
+
   return (
     <HeroContainer>
-      <Navbar handleMenu={handleMenu} handleCart={handleCart} />
-      <Sidebar openMenu={openMenu} handleMenu={handleMenu} />
+      <Navbar
+        handleMenuLeave={handleMenuLeave}
+        handleMenu={handleMenu}
+        handleCart={handleCart}
+      />
+      {openMenu ? (
+        <Sidebar
+          handleDropdown={handleDropdown}
+          handleDropdownLeave={handleDropdownLeave}
+        />
+      ) : (
+        ""
+      )}
+
       <Cart openCart={openCart} handleCart={handleCart} />
       <HeroContent>
         <HeroItems>

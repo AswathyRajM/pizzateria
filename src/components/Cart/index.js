@@ -16,9 +16,9 @@ export const Cart = ({ openCart, handleCart }) => {
         <CloseIcon />
       </Icon>
       <CartItems>
-        <CartItem to="/">Cakes</CartItem>
-        <CartItem to="/">Pies</CartItem>
-        <CartItem to="/">Cookies</CartItem>
+        <CartItem>item1</CartItem>
+        <CartItem>item2</CartItem>
+        <CartItem>item3</CartItem>
       </CartItems>
       <CartButton>
         <CartBtnRoute to="/">View All</CartBtnRoute>

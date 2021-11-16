@@ -17,6 +17,7 @@ export const CartContainer = styled.aside`
   @media screen and (max-width: 400px) {
     width: 100%;
   }
+
 `;
 
 export const CloseIcon = styled(FaTimes)`
@@ -45,7 +46,7 @@ export const CartItems = styled.div`
   }
 `;
 
-export const CartItem = styled(Link)`
+export const CartItem = styled.p`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,7 +55,7 @@ export const CartItem = styled(Link)`
   list-style: none;
   transition: 02s ease-in-out;
   text-decoration: none;
-  color: #000;
+  color: #fff;
   cursor: pointer;
 
   &:hover {

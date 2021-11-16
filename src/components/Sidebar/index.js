@@ -1,20 +1,12 @@
 import React from "react";
-import {
-  SidebarConatiner,
-  Icon,
-  CloseIcon,
-  SidebarMenu,
-  SidebarLink,
-  SideBtnWrap,
-  SidebarRoute,
-} from "./SidebarElements";
+import { SidebarConatiner, SidebarMenu, SidebarLink } from "./SidebarElements";
 
-export const Sidebar = ({ handleMenu, openMenu }) => {
+export const Sidebar = ({ handleDropdown, handleDropdownLeave }) => {
   return (
-    <SidebarConatiner openMenu={openMenu} onClick={handleMenu}>
-      <Icon onClick={handleMenu}>
-        <CloseIcon />
-      </Icon>
+    <SidebarConatiner
+      onMouseEnter={handleDropdown}
+      onMouseLeave={handleDropdownLeave}
+    >
       <SidebarMenu>
         <SidebarLink to="/">
           <p>Ice Creams</p>
@@ -25,10 +17,10 @@ export const Sidebar = ({ handleMenu, openMenu }) => {
         <SidebarLink to="/">
           <p>Drinks</p>
         </SidebarLink>
+        <SidebarLink to="/">
+          <p>View All</p>
+        </SidebarLink>
       </SidebarMenu>
-      <SideBtnWrap>
-        <SidebarRoute to="/">View All</SidebarRoute>
-      </SideBtnWrap>
     </SidebarConatiner>
   );
 };

@@ -1,7 +1,7 @@
 import React from "react";
 import { Bars, Nav, NavLogo, NavLink, NavLinks } from "./NavbarElements";
 
-export const Navbar = ({ handleMenu, handleCart }) => {
+export const Navbar = ({ handleMenu, handleCart, handleMenuLeave }) => {
   return (
     <>
       <Nav>
@@ -14,7 +14,7 @@ export const Navbar = ({ handleMenu, handleCart }) => {
           </NavLink>
 
           <NavLink to="/">
-            <div onClick={handleMenu}>
+            <div onMouseEnter={handleMenu} onMouseLeave={handleMenuLeave}>
               <p>Menu</p>
             </div>
           </NavLink>
