@@ -7,12 +7,12 @@ import {
   SidebarLink,
   SideBtnWrap,
   SidebarRoute,
-} from "./SidebarElements";
+} from "./CartElements";
 
-export const Sidebar = ({ handleMenu, openMenu }) => {
+export const Cart = ({ handleCart, openCart }) => {
   return (
-    <SidebarConatiner openMenu={openMenu} onClick={handleMenu}>
-      <Icon onClick={handleMenu}>
+    <SidebarConatiner openCart={openCart} onClick={handleCart}>
+      <Icon onClick={handleCart}>
         <CloseIcon />
       </Icon>
       <SidebarMenu>
