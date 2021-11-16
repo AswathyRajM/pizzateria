@@ -75,6 +75,7 @@ export const ItemName = styled.p`
 export const CartItem = styled.div`
   display: flex;
   justify-content: space-around;
+  padding-top: 1rem;
 `;
 
 export const CartButton = styled.div`
