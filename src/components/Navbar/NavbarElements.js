@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { NavLink as Link } from "react-router-dom";
-import { FaPizzaSlice, FaChevronDown } from "react-icons/fa";
+import { FaPizzaSlice } from "react-icons/fa";
 
 export const Nav = styled.nav`
   background: transparent;
@@ -32,18 +32,11 @@ export const NavLinks = styled.div`
   align-items: center;
   justify-content: center;
   margin-right: 1rem;
+  font-size: 1.2rem;
 
   @media screen and (max-width: 400px) {
     width: auto;
   }
-`;
-
-export const Flex = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: red;
-  padding: 1rem;
 `;
 
 export const NavLink = styled(Link)`
@@ -57,7 +50,7 @@ export const NavLink = styled(Link)`
     content: "";
     display: block;
     margin: auto;
-    height: 3px;
+    height: 2px;
     width: 0px;
     background: transparent;
     transition: width 0.2s ease, background-color 0.3s ease;
@@ -65,16 +58,13 @@ export const NavLink = styled(Link)`
 
   p:hover:after {
     width: 100%;
-    background: #ffc500;
+    background: #fff;
+  }
+  p:hover {
+    color: #e31837;
   }
 `;
 
 export const Bars = styled(FaPizzaSlice)`
   font-size: 2rem;
-`;
-
-export const Downarrow = styled(FaChevronDown)`
-  font-size: 1rem;
-  margin: 0;
-  padding: 0;
 `;

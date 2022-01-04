@@ -22,9 +22,9 @@ export const Navbar = ({ handleMenu, handleCart, handleMenuLeave }) => {
           </NavLink>
 
           <NavLink to="/">
-            <Flex onMouseOver={handleMenu} onMouseLeave={handleMenuLeave}>
+            <div onMouseOver={handleMenu} onMouseLeave={handleMenuLeave}>
               <p>Menu</p>
-            </Flex>
+            </div>
           </NavLink>
 
           <NavLink to="/">
