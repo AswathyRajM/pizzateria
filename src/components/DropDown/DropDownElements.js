@@ -6,7 +6,8 @@ export const DropDownContainer = styled.aside`
   z-index: 999;
   width: 10rem;
   height: auto;
-  background: #ffc500;
+  background: #e31837;
+  color: #fff;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -26,6 +27,7 @@ export const DropDownMenu = styled.div`
   grid-template-rows: repeat(3, 2rem);
   text-align: center;
   padding-top: 1rem;
+  position: relative;
 
   @media screen and (max-width: 480px) {
     grid-template-rows: repeat(3, 60px);
@@ -41,12 +43,12 @@ export const DropDownLInk = styled(Link)`
   list-style: none;
   transition: 0.2s ease-in-out;
   text-decoration: none;
-  color: #000;
+  color: #fff;
   cursor: pointer;
   padding-top: 2rem;
 
   &:hover {
-    color: #e31837;
+    color: #000;
     transition: 0.2s ease-in-out;
   }
 
@@ -58,11 +60,13 @@ export const DropDownLInk = styled(Link)`
     width: 0px;
     background: transparent;
     transition: width 0.2s ease, background-color 0.3s ease;
+    position: absolute;
+    left: -0.5rem;
   }
 
   p:hover:after {
-    width: 100%;
-    background: #e31837;
+    width: calc(100% + 1rem);
+    background: #fff;
   }
 
   p:last-child {

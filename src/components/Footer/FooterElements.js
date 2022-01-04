@@ -53,6 +53,7 @@ export const SectionHeader = styled.h4`
 
 export const SectionPara = styled.p`
   line-height: 1.7rem;
+  color: #ccc;
 `;
 
 export const FooterNavlist = styled.div`
@@ -63,7 +64,7 @@ export const FooterNavlist = styled.div`
 
 export const ListItem = styled(Link)`
   text-decoration: none;
-  color: #fff;
+  color: #ccc;
   cursor: pointer;
   padding-bottom: 0.5rem;
   width: fit-content;

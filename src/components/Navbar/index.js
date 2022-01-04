@@ -1,5 +1,13 @@
 import React from "react";
-import { Bars, Nav, NavLogo, NavLink, NavLinks } from "./NavbarElements";
+import {
+  Bars,
+  Nav,
+  NavLogo,
+  NavLink,
+  NavLinks,
+  Downarrow,
+  Flex,
+} from "./NavbarElements";
 
 export const Navbar = ({ handleMenu, handleCart, handleMenuLeave }) => {
   return (
@@ -14,9 +22,9 @@ export const Navbar = ({ handleMenu, handleCart, handleMenuLeave }) => {
           </NavLink>
 
           <NavLink to="/">
-            <div onMouseEnter={handleMenu} onMouseLeave={handleMenuLeave}>
+            <Flex onMouseOver={handleMenu} onMouseLeave={handleMenuLeave}>
               <p>Menu</p>
-            </div>
+            </Flex>
           </NavLink>
 
           <NavLink to="/">

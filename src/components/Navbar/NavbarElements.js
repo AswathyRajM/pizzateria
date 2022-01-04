@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { NavLink as Link } from "react-router-dom";
-import { RiCake3Fill } from "react-icons/ri";
+import { FaPizzaSlice, FaChevronDown } from "react-icons/fa";
 
 export const Nav = styled.nav`
   background: transparent;
@@ -38,6 +38,14 @@ export const NavLinks = styled.div`
   }
 `;
 
+export const Flex = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: red;
+  padding: 1rem;
+`;
+
 export const NavLink = styled(Link)`
   color: #fff;
   text-decoration: none;
@@ -61,6 +69,12 @@ export const NavLink = styled(Link)`
   }
 `;
 
-export const Bars = styled(RiCake3Fill)`
+export const Bars = styled(FaPizzaSlice)`
   font-size: 2rem;
+`;
+
+export const Downarrow = styled(FaChevronDown)`
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
 `;
