@@ -10,6 +10,9 @@ import {
   ProductDesc,
   ProductPrice,
   ProductBtn,
+  ViewAllContainer,
+  ViewAllTitle,
+  ProductFooter,
 } from "./ProductElements";
 
 export const Products = ({ heading, data }) => {
@@ -24,12 +27,19 @@ export const Products = ({ heading, data }) => {
               <ProductInfo>
                 <ProductTitle>{product.name}</ProductTitle>
                 <ProductDesc>{product.desc}</ProductDesc>
-                <ProductPrice>{product.price}</ProductPrice>
-                <ProductBtn>Add to Cart</ProductBtn>
+                <ProductFooter>
+                  <ProductPrice>{product.price}</ProductPrice>
+                  <ProductBtn>Add </ProductBtn>
+                </ProductFooter>
               </ProductInfo>
             </ProductCard>
           );
         })}
+        <ProductCard key={"view-all"}>
+          <ViewAllContainer>
+            <ViewAllTitle>View All</ViewAllTitle>
+          </ViewAllContainer>
+        </ProductCard>
       </Productwrapper>
     </ProductsContainer>
   );
