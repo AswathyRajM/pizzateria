@@ -82,6 +82,7 @@ export const ProductBtn = styled.button`
   -webkit-box-shadow: 0px 0px 12px 1px rgba(90, 90, 90, 0.75);
   -moz-box-shadow: 0px 0px 12px 1px rgba(90, 90, 90, 0.75);
   border-radius: 2px;
+
   &:hover {
     background: #e31837;
     transition: 0.2 ease-out;

@@ -1,5 +1,6 @@
 export const ProductsData = [
   {
+    id: 1,
     img: "images/hawaiian.jpg",
     alt: "pizza2",
     name: "Hawaiian ",
@@ -7,6 +8,7 @@ export const ProductsData = [
     price: "$9.99",
   },
   {
+    id: 2,
     img: "images/hawaiian.jpg",
     alt: "pizza2",
     name: "Hawaiian ",
@@ -14,6 +16,7 @@ export const ProductsData = [
     price: "$9.99",
   },
   {
+    id: 3,
     img: "images/hawaiian.jpg",
     alt: "pizza2",
     name: "Hawaiian ",
@@ -21,6 +24,7 @@ export const ProductsData = [
     price: "$9.99",
   },
   {
+    id: 4,
     img: "images/hawaiian.jpg",
     alt: "pizza2",
     name: "Hawaiian ",
@@ -28,10 +32,14 @@ export const ProductsData = [
     price: "$9.99",
   },
   {
+    id: 5,
     img: "images/hawaiian.jpg",
     alt: "pizza2",
     name: "Hawaiian ",
     desc: "Pizza sauce, mozzarella, ham, pineapple",
     price: "$9.99",
+  },
+  {
+    id: 6,
   },
 ];

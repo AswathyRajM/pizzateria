@@ -1,4 +1,6 @@
 import React from "react";
+import FadeIn from "react-fade-in";
+
 import {
   ProductsContainer,
   ProductsHeading,
@@ -21,25 +23,33 @@ export const Products = ({ heading, data }) => {
       <ProductsHeading>{heading}</ProductsHeading>
       <Productwrapper>
         {data.map((product, index) => {
-          return (
-            <ProductCard key={index}>
-              <ProductImg src={product.img} alt={product.name} />
-              <ProductInfo>
-                <ProductTitle>{product.name}</ProductTitle>
-                <ProductDesc>{product.desc}</ProductDesc>
-                <ProductFooter>
-                  <ProductPrice>{product.price}</ProductPrice>
-                  <ProductBtn>Add </ProductBtn>
-                </ProductFooter>
-              </ProductInfo>
-            </ProductCard>
-          );
+          if (index < data.length - 1)
+            return (
+              <FadeIn delay={200 * index}>
+                <ProductCard key={index}>
+                  <ProductImg src={product.img} alt={product.name} />
+                  <ProductInfo>
+                    <ProductTitle>{product.name}</ProductTitle>
+                    <ProductDesc>{product.desc}</ProductDesc>
+                    <ProductFooter>
+                      <ProductPrice>{product.price}</ProductPrice>
+                      <ProductBtn>Add </ProductBtn>
+                    </ProductFooter>
+                  </ProductInfo>
+                </ProductCard>
+              </FadeIn>
+            );
+          else
+            return (
+              <FadeIn>
+                <ProductCard key={index}>
+                  <ViewAllContainer>
+                    <ViewAllTitle>View All</ViewAllTitle>
+                  </ViewAllContainer>
+                </ProductCard>
+              </FadeIn>
+            );
         })}
-        <ProductCard key={"view-all"}>
-          <ViewAllContainer>
-            <ViewAllTitle>View All</ViewAllTitle>
-          </ViewAllContainer>
-        </ProductCard>
       </Productwrapper>
     </ProductsContainer>
   );

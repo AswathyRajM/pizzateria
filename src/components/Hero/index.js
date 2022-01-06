@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import FadeIn from "react-fade-in";
 import { Cart } from "../Cart";
 import { Navbar } from "../Navbar";
 import { DropDown } from "../DropDown";
@@ -59,9 +60,11 @@ export const Hero = () => {
       <Cart openCart={openCart} handleCart={handleCart} />
       <HeroContent>
         <HeroItems>
-          <HeroH1>Yummy Pizza</HeroH1>
-          <HeroP>All You Need is Love & Pizza</HeroP>
-          <HeroBtn>Place Order</HeroBtn>
+          <FadeIn>
+            <HeroH1>Yummy Pizza</HeroH1>
+            <HeroP>All You Need is Love & Pizza</HeroP>
+            <HeroBtn>Place Order</HeroBtn>
+          </FadeIn>
         </HeroItems>
       </HeroContent>
     </HeroContainer>
