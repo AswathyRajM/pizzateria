@@ -6,6 +6,7 @@ import { GlobalStyles } from "./globalStyles";
 import { ProductsData } from "./components/Products/data";
 import Featured from "./components/Featured";
 import Footer from "./components/Footer";
+import "./globalStyle.css";
 
 function App() {
   return (

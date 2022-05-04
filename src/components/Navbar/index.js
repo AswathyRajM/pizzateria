@@ -34,13 +34,17 @@ export const Navbar = ({ handleCart }) => {
       <Nav>
         <NavLogo to='/'>Pizzateria</NavLogo>
         <NavLinks>
-          <div style={{ position: "relative" }}>
+          <div
+            style={{
+              position: "relative",
+            }}
+          >
             <NavLink to='/'>
               <div onMouseOver={handleMenu} onMouseLeave={handleMenuLeave}>
                 <p>Menu</p>
               </div>
             </NavLink>
-            <div style={{ position: "absolute", right: 10 }}>
+            <div className='dropdown-menu'>
               {openMenu && (
                 <DropDown
                   handleDropdown={handleDropdown}

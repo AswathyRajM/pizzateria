@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export const DropDownContainer = styled.aside`
   position: absolute;
   z-index: 999;
-  width: 15rem;
+  width: 12rem;
   height: auto;
   background: #e31837;
   color: #fff;
