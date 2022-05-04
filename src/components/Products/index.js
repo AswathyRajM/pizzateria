@@ -25,8 +25,8 @@ export const Products = ({ heading, data }) => {
         {data.map((product, index) => {
           if (index < data.length - 1)
             return (
-              <FadeIn delay={200 * index}>
-                <ProductCard key={index}>
+              <FadeIn delay={200 * index} key={index}>
+                <ProductCard>
                   <ProductImg src={product.img} alt={product.name} />
                   <ProductInfo>
                     <ProductTitle>{product.name}</ProductTitle>
@@ -41,8 +41,8 @@ export const Products = ({ heading, data }) => {
             );
           else
             return (
-              <FadeIn>
-                <ProductCard key={index}>
+              <FadeIn key={index}>
+                <ProductCard>
                   <ViewAllContainer>
                     <ViewAllTitle>View All</ViewAllTitle>
                   </ViewAllContainer>

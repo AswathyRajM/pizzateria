@@ -88,7 +88,7 @@ export const ProductBtn = styled.button`
   }
 `;
 
-export const ProductFooter = styled.button`
+export const ProductFooter = styled.div`
   padding: 0.3rem 1rem;
   border: none;
   background: transparent;
