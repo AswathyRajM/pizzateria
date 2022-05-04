@@ -4,13 +4,13 @@ import { FaPizzaSlice } from "react-icons/fa";
 import { FaUserCircle } from "react-icons/fa";
 
 export const Nav = styled.nav`
-  height: 80px;
+  max-height: 70px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   font-weight: 700;
-  padding: 3rem;
+  padding: 2rem 3rem;
   position: fixed;
   z-index: 999;
   background: ${({ scrollY }) =>
