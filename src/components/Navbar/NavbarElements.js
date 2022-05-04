@@ -91,3 +91,23 @@ export const DropdownMenu = styled.div`
   top: 0.75rem;
   left: -2.7rem;
 `;
+
+export const BarsWrapper = styled.div`
+  position: relative;
+`;
+
+export const Notification = styled.div`
+  position: absolute;
+  top: 0;
+  right: -10px;
+  background: #e31837;
+  color: #fff;
+  font-size: 14px;
+  font-weight: normal;
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;

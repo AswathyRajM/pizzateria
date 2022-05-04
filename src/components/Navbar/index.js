@@ -7,9 +7,11 @@ import {
   NavLinks,
   // Downarrow,
   // Flex,
+  BarsWrapper,
   UserProfile,
   DropdownWrapper,
   DropdownMenu,
+  Notification,
 } from "./NavbarElements";
 import { DropDown } from "../DropDown";
 
@@ -63,11 +65,14 @@ export const Navbar = ({ handleCart }) => {
           </DropdownWrapper>
 
           <NavLink to='/'>
-            <div onClick={handleCart}>
+            <BarsWrapper onClick={handleCart}>
+              <Notification>
+                <span>4</span>
+              </Notification>
               <p>
                 <Bars />
               </p>
-            </div>
+            </BarsWrapper>
           </NavLink>
         </NavLinks>
       </Nav>

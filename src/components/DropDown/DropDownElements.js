@@ -26,7 +26,7 @@ export const DropDownMenu = styled.div`
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 2rem);
   text-align: center;
-  padding-top: 1rem;
+  padding-top: 0.3rem;
   position: relative;
 
   @media screen and (max-width: 480px) {
