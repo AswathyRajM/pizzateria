@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Bars,
   Nav,
@@ -17,6 +17,7 @@ import { DropDown } from "../DropDown";
 
 export const Navbar = ({ handleCart }) => {
   const [openMenu, setMenuOpen] = useState(false);
+  const [scrollY, setScrollY] = useState(0);
 
   const handleDropdown = () => {
     setMenuOpen(true);
@@ -34,14 +35,41 @@ export const Navbar = ({ handleCart }) => {
     setMenuOpen(false);
   };
 
+  function handleScroll() {
+    // Change Header background color.
+    setScrollY(window.pageYOffset);
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
-      <Nav>
+      <Nav scrollY={scrollY}>
         <NavLogo to='/'>Pizzateria</NavLogo>
         <NavLinks>
           <NavLink to='/'>
             <div>
-              <p>Pizza</p>
+              <p>Meals & Combos</p>
+            </div>
+          </NavLink>
+          <NavLink to='/'>
+            <div>
+              <p>Non-Veg Pizaa</p>
+            </div>
+          </NavLink>
+          <NavLink to='/'>
+            <div>
+              <p>Veg Pizza</p>
+            </div>
+          </NavLink>
+          <NavLink to='/'>
+            <div>
+              <p>Beverages & Desserts</p>
             </div>
           </NavLink>
           <DropdownWrapper>
@@ -66,7 +94,7 @@ export const Navbar = ({ handleCart }) => {
 
           <NavLink to='/'>
             <BarsWrapper onClick={handleCart}>
-              <Notification>
+              <Notification scrollY={scrollY}>
                 <span>4</span>
               </Notification>
               <p>

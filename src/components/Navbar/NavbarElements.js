@@ -4,7 +4,6 @@ import { FaPizzaSlice } from "react-icons/fa";
 import { FaUserCircle } from "react-icons/fa";
 
 export const Nav = styled.nav`
-  background: transparent;
   height: 80px;
   display: flex;
   align-items: center;
@@ -12,6 +11,13 @@ export const Nav = styled.nav`
   width: 100%;
   font-weight: 700;
   padding: 3rem;
+  position: fixed;
+  z-index: 999;
+  background: ${({ scrollY }) =>
+    scrollY > 1
+      ? "#000"
+      : "linear-gradient(to bottom, #000, #0003 70%, #0000)"};
+  transition: background 0.5s;
 `;
 
 export const NavLogo = styled(Link)`
@@ -34,7 +40,9 @@ export const NavLinks = styled.div`
   align-items: center;
   justify-content: center;
   margin-right: 1rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  height: 100%;
 
   @media screen and (max-width: 400px) {
     width: auto;
@@ -46,8 +54,8 @@ export const NavLink = styled(Link)`
   text-decoration: none;
   cursor: pointer;
   display: block;
-  padding: 0 2rem;
-  margin-top: 2rem;
+  padding: 0 1.5rem;
+  margin-top: 1rem;
   letter-spacing: 1px;
 
   p {
