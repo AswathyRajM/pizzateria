@@ -12,17 +12,17 @@ export const DropDown = ({ handleDropdown, handleDropdownLeave }) => {
       onMouseLeave={handleDropdownLeave}
     >
       <DropDownMenu>
-        <DropDownLInk to="/">
-          <p>Ice Creams</p>
+        <DropDownLInk to='/'>
+          <p>Account</p>
         </DropDownLInk>
-        <DropDownLInk to="/">
-          <p>Burgers</p>
+        <DropDownLInk to='/'>
+          <p>Orders</p>
         </DropDownLInk>
-        <DropDownLInk to="/">
-          <p>Drinks</p>
+        <DropDownLInk to='/'>
+          <p>History</p>
         </DropDownLInk>
-        <DropDownLInk to="/">
-          <p>View All</p>
+        <DropDownLInk to='/'>
+          <p>Logout</p>
         </DropDownLInk>
       </DropDownMenu>
     </DropDownContainer>

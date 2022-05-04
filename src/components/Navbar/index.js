@@ -7,6 +7,9 @@ import {
   NavLinks,
   Downarrow,
   Flex,
+  UserProfile,
+  DropdownWrapper,
+  DropdownMenu,
 } from "./NavbarElements";
 import { DropDown } from "../DropDown";
 
@@ -34,31 +37,30 @@ export const Navbar = ({ handleCart }) => {
       <Nav>
         <NavLogo to='/'>Pizzateria</NavLogo>
         <NavLinks>
-          <div
-            style={{
-              position: "relative",
-            }}
-          >
+          <NavLink to='/'>
+            <div>
+              <p>Pizza</p>
+            </div>
+          </NavLink>
+          <DropdownWrapper>
             <NavLink to='/'>
               <div onMouseOver={handleMenu} onMouseLeave={handleMenuLeave}>
-                <p>Menu</p>
+                <p>
+                  <span>
+                    <UserProfile />
+                  </span>
+                </p>
               </div>
             </NavLink>
-            <div className='dropdown-menu'>
+            <DropdownMenu>
               {openMenu && (
                 <DropDown
                   handleDropdown={handleDropdown}
                   handleDropdownLeave={handleDropdownLeave}
                 />
               )}
-            </div>
-          </div>
-
-          <NavLink to='/'>
-            <div>
-              <p>Orders</p>
-            </div>
-          </NavLink>
+            </DropdownMenu>
+          </DropdownWrapper>
 
           <NavLink to='/'>
             <div onClick={handleCart}>

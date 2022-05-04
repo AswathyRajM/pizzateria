@@ -38,7 +38,9 @@ export const DropDownLInk = styled(Link)`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
   text-decoration: none;
   list-style: none;
   transition: 0.2s ease-in-out;

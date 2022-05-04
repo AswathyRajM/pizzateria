@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { NavLink as Link } from "react-router-dom";
 import { FaPizzaSlice } from "react-icons/fa";
+import { FaUserCircle } from "react-icons/fa";
 
 export const Nav = styled.nav`
   background: transparent;
@@ -19,6 +20,7 @@ export const NavLogo = styled(Link)`
   display: flex;
   align-items: center;
   text-decoration: none;
+  letter-spacing: 1px;
 
   @media screen and (max-width: 400px) {
     position: absolute;
@@ -46,6 +48,11 @@ export const NavLink = styled(Link)`
   display: block;
   padding: 0 2rem;
   margin-top: 2rem;
+  letter-spacing: 1px;
+
+  p {
+    text-transform: capitalize;
+  }
 
   p:after {
     content: "";
@@ -61,6 +68,7 @@ export const NavLink = styled(Link)`
     width: 100%;
     background: #fff;
   }
+
   p:hover {
     color: #e31837;
   }
@@ -68,4 +76,18 @@ export const NavLink = styled(Link)`
 
 export const Bars = styled(FaPizzaSlice)`
   font-size: 2rem;
+`;
+
+export const UserProfile = styled(FaUserCircle)`
+  font-size: 2rem;
+`;
+
+export const DropdownWrapper = styled.div`
+  position: relative;
+`;
+
+export const DropdownMenu = styled.div`
+  position: absolute;
+  top: 0.75rem;
+  left: -2.7rem;
 `;

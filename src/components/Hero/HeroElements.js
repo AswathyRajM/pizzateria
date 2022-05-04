@@ -12,6 +12,7 @@ export const HeroContent = styled.div`
   height: calc(100vh-80px);
   max-height: 100%;
   padding: 0rem calc((100vw - 1200px) / 2);
+  letter-spacing: 1px;
 `;
 
 export const HeroItems = styled.div`
@@ -41,7 +42,7 @@ export const HeroH1 = styled.h1`
 `;
 
 export const HeroP = styled.p`
-  font-size: clamp(2rem, 2.5vw, 3rem);
+  font-size: clamp(1.8rem, 2.5vw, 2.2rem);
   margin-bottom: 2rem;
   margin-top: 1rem;
 `;
