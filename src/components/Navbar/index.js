@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Bars,
   Nav,
@@ -10,7 +10,25 @@ import {
 } from "./NavbarElements";
 import { DropDown } from "../DropDown";
 
-export const Navbar = ({ handleMenu, handleCart, handleMenuLeave }) => {
+export const Navbar = ({ handleCart }) => {
+  const [openMenu, setMenuOpen] = useState(false);
+
+  const handleDropdown = () => {
+    setMenuOpen(true);
+  };
+
+  const handleDropdownLeave = () => {
+    setMenuOpen(false);
+  };
+
+  const handleMenu = () => {
+    setMenuOpen(true);
+  };
+
+  const handleMenuLeave = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <>
       <Nav>
@@ -23,12 +41,12 @@ export const Navbar = ({ handleMenu, handleCart, handleMenuLeave }) => {
               </div>
             </NavLink>
             <div style={{ position: "absolute", right: 10 }}>
-              {/* {openMenu && (
+              {openMenu && (
                 <DropDown
                   handleDropdown={handleDropdown}
                   handleDropdownLeave={handleDropdownLeave}
                 />
-              )} */}
+              )}
             </div>
           </div>
 
