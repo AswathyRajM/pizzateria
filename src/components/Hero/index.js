@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import FadeIn from "react-fade-in";
 import { Cart } from "../Cart";
 import { Navbar } from "../Navbar";
-import { DropDown } from "../DropDown";
 import {
   HeroContainer,
   HeroContent,
