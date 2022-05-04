@@ -2,9 +2,9 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const DropDownContainer = styled.aside`
-  position: fixed;
+  position: absolute;
   z-index: 999;
-  width: 10rem;
+  width: 15rem;
   height: auto;
   background: #e31837;
   color: #fff;
@@ -14,7 +14,7 @@ export const DropDownContainer = styled.aside`
   top: 4rem;
   transition: 0.3s ease-in-out;
   border-radius: 2px;
-  right: 9.5rem;
+  // right: 15.5rem;
 
   @media screen and (max-width: 400px) {
     width: 100%;

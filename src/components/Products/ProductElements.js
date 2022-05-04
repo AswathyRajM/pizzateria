@@ -4,7 +4,7 @@ export const ProductsContainer = styled.div`
   max-width: 100vw;
   min-height: 100vh;
   padding: 5rem;
-  background: #000;
+  background: #030303;
   color: #fff;
 `;
 
@@ -30,9 +30,9 @@ export const ProductCard = styled.div`
   height: 200px;
   color: #f4f4f4;
   background-color: #000;
-  box-shadow: 0px 0px 12px 1px rgba(90, 90, 90, 0.75);
-  -webkit-box-shadow: 0px 0px 12px 1px rgba(90, 90, 90, 0.75);
-  -moz-box-shadow: 0px 0px 12px 1px rgba(90, 90, 90, 0.75);
+  -webkit-box-shadow: 1px 1px 5px 0px rgba(90, 90, 90, 0.75);
+  -moz-box-shadow: 1px 1px 5px 0px rgba(90, 90, 90, 0.75);
+  box-shadow: 1px 1px 3px 0px rgba(90, 90, 90, 0.75);
   position: relative;
   width: 100%;
 `;
@@ -72,21 +72,19 @@ export const ProductPrice = styled.p`
 export const ProductBtn = styled.button`
   padding: 0.3rem 1rem;
   border: none;
-  background: #000;
+  background: #e31837;
   color: #fff;
   transition: 0.2 ease-out;
   font-size: 1.1rem;
   text-transform: capitalize;
   font-weight: 400;
-  box-shadow: 0px 0px 12px 1px rgba(90, 90, 90, 0.75);
-  -webkit-box-shadow: 0px 0px 12px 1px rgba(90, 90, 90, 0.75);
-  -moz-box-shadow: 0px 0px 12px 1px rgba(90, 90, 90, 0.75);
   border-radius: 2px;
+  cursor: pointer;
 
   &:hover {
-    background: #e31837;
-    transition: 0.2 ease-out;
-    cursor: pointer;
+    background: #ffc500;
+    transition: all 0.2s ease-out;
+    color: #000;
   }
 `;
 

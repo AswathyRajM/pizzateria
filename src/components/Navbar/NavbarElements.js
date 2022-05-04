@@ -45,6 +45,7 @@ export const NavLink = styled(Link)`
   cursor: pointer;
   display: block;
   padding: 0 2.5rem;
+  margin-top: 2rem;
 
   p:after {
     content: "";

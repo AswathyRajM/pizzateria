@@ -48,15 +48,12 @@ export const Hero = () => {
         handleMenu={handleMenu}
         handleCart={handleCart}
       />
-      {openMenu ? (
+      {openMenu && (
         <DropDown
           handleDropdown={handleDropdown}
           handleDropdownLeave={handleDropdownLeave}
         />
-      ) : (
-        ""
       )}
-
       <Cart openCart={openCart} handleCart={handleCart} />
       <HeroContent>
         <HeroItems>

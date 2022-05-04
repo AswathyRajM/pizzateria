@@ -1,9 +1,8 @@
 import styled from "styled-components";
-import FeaturedPie from "../../images/featured.jpg";
 
 export const FeatureContainer = styled.div`
   background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
-    url(${FeaturedPie});
+    url("https://ik.imagekit.io/aswathy/images/featured_Q2wsv02eL.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651588578882");
   height: 100vh;
   max-height: 500px;
   background-position: center;
