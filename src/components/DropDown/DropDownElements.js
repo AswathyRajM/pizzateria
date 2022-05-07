@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import * as color from "../../utils/variables";
 
 export const DropDownMain = styled.div`
   position: absolute;
@@ -17,8 +18,8 @@ export const DropDownTransparentContainer = styled.div`
 `;
 
 export const DropDownContainer = styled.aside`
-  background: #e31837;
-  color: #fff;
+  background: ${color.fontWhite};
+  color: ${color.mainBlack};
   display: grid;
   align-items: center;
   justify-content: center;
@@ -55,14 +56,9 @@ export const DropDownLInk = styled(Link)`
   list-style: none;
   transition: 0.2s ease-in-out;
   text-decoration: none;
-  color: #fff;
+  color: ${color.mainBlack};
   cursor: pointer;
   padding-top: 2rem;
-
-  &:hover {
-    color: #000;
-    transition: 0.2s ease-in-out;
-  }
 
   p:after {
     content: "";
@@ -78,7 +74,7 @@ export const DropDownLInk = styled(Link)`
 
   p:hover:after {
     width: calc(100% + 1rem);
-    background: #fff;
+    background: ${color.mainColor};
   }
 
   p:last-child {

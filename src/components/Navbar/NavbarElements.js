@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { NavLink as Link } from "react-router-dom";
 import { FaPizzaSlice } from "react-icons/fa";
 import { FaUserCircle } from "react-icons/fa";
+import * as color from "../../utils/variables";
 
 export const Nav = styled.nav`
   max-height: 70px;
@@ -15,13 +16,13 @@ export const Nav = styled.nav`
   z-index: 999;
   background: ${({ scrollY }) =>
     scrollY > 1
-      ? "#000"
+      ? `${color.mainColor}`
       : "linear-gradient(to bottom, #000, #0003 70%, #0000)"};
   transition: background 0.5s;
 `;
 
 export const NavLogo = styled(Link)`
-  color: #fff;
+  color: ${color.fontWhite};
   font-size: 2rem;
   display: flex;
   align-items: center;
@@ -50,7 +51,7 @@ export const NavLinks = styled.div`
 `;
 
 export const NavLink = styled(Link)`
-  color: #fff;
+  color: ${color.fontWhite};
   text-decoration: none;
   cursor: pointer;
   display: block;
@@ -74,11 +75,11 @@ export const NavLink = styled(Link)`
 
   p:hover:after {
     width: 100%;
-    background: #fff;
+    background: ${color.fontWhite};
   }
 
   p:hover {
-    color: #e31837;
+    color: ${color.mainColor};
   }
 `;
 
@@ -108,8 +109,8 @@ export const Notification = styled.div`
   position: absolute;
   top: 0;
   right: -10px;
-  background: #e31837;
-  color: #fff;
+  background: ${color.yellow};
+  color: ${color.mainBlack};
   font-size: 14px;
   font-weight: normal;
   border-radius: 50%;

@@ -1,13 +1,14 @@
 import styled from "styled-components";
 import { NavLink as Link } from "react-router-dom";
+import * as color from "../../utils/variables";
 
 export const Footer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  color: #fff;
-  background: #150f0f;
+  color: ${color.fontWhite};
+  background: ${color.mainBlack};
   height: auto;
   min-height: 40vh;
   width: 100%;
@@ -39,7 +40,7 @@ export const FooterSection = styled.div`
 `;
 
 export const FooterLogo = styled(Link)`
-  color: #fff;
+  color: ${color.fontWhite};
   font-size: 2rem;
   font-weight: 600;
   display: flex;
@@ -53,7 +54,7 @@ export const SectionHeader = styled.h4`
 
 export const SectionPara = styled.p`
   line-height: 1.7rem;
-  color: #ccc;
+  color: ${color.grey};
 `;
 
 export const FooterNavlist = styled.div`
@@ -64,7 +65,7 @@ export const FooterNavlist = styled.div`
 
 export const ListItem = styled(Link)`
   text-decoration: none;
-  color: #ccc;
+  color: ${color.grey};
   cursor: pointer;
   padding-bottom: 0.5rem;
   width: fit-content;

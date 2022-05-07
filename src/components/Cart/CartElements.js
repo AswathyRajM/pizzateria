@@ -1,13 +1,14 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
+import * as color from "../../utils/variables";
 
 export const CartContainer = styled.aside`
   position: fixed;
   z-index: 999;
   width: 350px;
   height: 100%;
-  background: #ffc500;
+  background: ${color.fontWhite};
   display: grid;
   align-items: flex-start;
   top: 0;
@@ -23,7 +24,7 @@ export const CartContainer = styled.aside`
 export const Container = styled.div`
   width: 350px;
   height: auto;
-  background: #ffc500;
+  background: ${color.fontWhite};
   display: grid;
   align-items: center;
   transition: 0.3s ease-in-out;
@@ -35,7 +36,7 @@ export const Container = styled.div`
 `;
 
 export const CloseIcon = styled(FaTimes)`
-  color: #000;
+  color: ${color.mainBlack}; ;
 `;
 
 export const Icon = styled.div`
@@ -65,7 +66,7 @@ export const CartHeading = styled.h4`
 
 export const ItemName = styled.p`
   font-size: 1.1rem;
-  color: #000;
+  color: ${color.mainBlack};
   white-space: nowrap;
   width: 12rem;
   overflow: hidden;
@@ -84,10 +85,10 @@ export const CartButton = styled.div`
 `;
 
 export const CartBtnRoute = styled(Link)`
-  background: #e31837;
+  background: ${color.mainColor};
   white-space: nowrap;
   padding: 16px 64px;
-  color: #fff;
+  color: ${color.fontWhite};
   font-size: 16px;
   outline: none;
   border: none;
@@ -98,7 +99,7 @@ export const CartBtnRoute = styled(Link)`
 
   &:hover {
     transition: 0.2s ease-in-out;
-    background: #fff;
-    color: #010606;
+    background: ${color.yellow};
+    color: ${color.mainBlack};
   }
 `;

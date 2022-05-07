@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import * as color from "../../utils/variables";
 
 export const FeatureContainer = styled.div`
   background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
@@ -11,7 +12,7 @@ export const FeatureContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: ${color.fontWhite};
   text-align: center;
   over-flow: hidden;
   h1 {
@@ -27,13 +28,14 @@ export const FeatureBtn = styled.button`
   font-size: 1.4rem;
   padding: 0.6rem 3rem;
   border: none;
-  background: #ffc500;
-  color: #000;
+  background: ${color.yellow};
+  color: ${color.mainBlack};
   transition: 0.2s ease-out;
+  margin-top: 1.5rem;
 
   &:hover {
-    color: #fff;
-    background: #e31837;
+    color: ${color.fontWhite};
+    background: ${color.mainColor};
     transition: 0.2s ease-out;
     cursor: pointer;
   }

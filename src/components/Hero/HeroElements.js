@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import * as color from "../../utils/variables";
 
 export const HeroContainer = styled.div`
   background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
@@ -24,7 +25,7 @@ export const HeroItems = styled.div`
   max-height: 100%;
   padding: 0 2rem;
   width: 650px;
-  color: #fff;
+  color: ${color.fontWhite};
   text-transform: uppercase;
   line-height: 1;
   font-weight: bold;
@@ -51,14 +52,14 @@ export const HeroBtn = styled.button`
   font-size: 1.4rem;
   padding: 1rem 4rem;
   border: none;
-  background: #e31837;
-  color: #fff;
+  background: ${color.mainColor};
+  color: ${color.fontWhite};
   transition: 0.2s ease-out;
 
   &:hover {
     background: #ffc500;
     transition: 0.2 ease-out;
     cursor: pointer;
-    color: #000;
+    color: ${color.mainBlack};
   }
 `;
