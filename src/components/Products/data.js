@@ -40,6 +40,11 @@ export const ProductsData = [
     price: "$9.99",
   },
   {
-    id: 6,
+    id: 5,
+    img: "images/hawaiian.jpg",
+    alt: "pizza2",
+    name: "Hawaiian ",
+    desc: "Pizza sauce, mozzarella, ham, pineapple",
+    price: "$9.99",
   },
 ];

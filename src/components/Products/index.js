@@ -12,43 +12,32 @@ import {
   ProductDesc,
   ProductPrice,
   ProductBtn,
-  ViewAllContainer,
-  ViewAllTitle,
   ProductFooter,
+  ViewAllButton,
 } from "./ProductElements";
 
 export const Products = ({ heading, data }) => {
   return (
     <ProductsContainer>
       <ProductsHeading>{heading}</ProductsHeading>
+      <ViewAllButton> View All </ViewAllButton>
       <Productwrapper>
         {data.map((product, index) => {
-          if (index < data.length - 1)
-            return (
-              <FadeIn delay={200 * index} key={index}>
-                <ProductCard>
-                  <ProductImg src={product.img} alt={product.name} />
-                  <ProductInfo>
-                    <ProductTitle>{product.name}</ProductTitle>
-                    <ProductDesc>{product.desc}</ProductDesc>
-                    <ProductFooter>
-                      <ProductPrice>{product.price}</ProductPrice>
-                      <ProductBtn>Add </ProductBtn>
-                    </ProductFooter>
-                  </ProductInfo>
-                </ProductCard>
-              </FadeIn>
-            );
-          else
-            return (
-              <FadeIn key={index}>
-                <ProductCard>
-                  <ViewAllContainer>
-                    <ViewAllTitle>View All</ViewAllTitle>
-                  </ViewAllContainer>
-                </ProductCard>
-              </FadeIn>
-            );
+          return (
+            <FadeIn delay={200 * index} key={index}>
+              <ProductCard>
+                <ProductImg src={product.img} alt={product.name} />
+                <ProductInfo>
+                  <ProductTitle>{product.name}</ProductTitle>
+                  <ProductDesc>{product.desc}</ProductDesc>
+                  <ProductFooter>
+                    <ProductPrice>{product.price}</ProductPrice>
+                    <ProductBtn>Add </ProductBtn>
+                  </ProductFooter>
+                </ProductInfo>
+              </ProductCard>
+            </FadeIn>
+          );
         })}
       </Productwrapper>
     </ProductsContainer>

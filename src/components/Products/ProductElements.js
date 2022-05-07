@@ -4,8 +4,9 @@ export const ProductsContainer = styled.div`
   max-width: 100vw;
   min-height: 100vh;
   padding: 5rem;
-  background: #030303;
-  color: #fff;
+  background: #191919;
+  color: #e6e6e;
+  position: relative;
 `;
 
 export const ProductsHeading = styled.h1`
@@ -29,10 +30,10 @@ export const ProductCard = styled.div`
   line-height: 1.5;
   height: 200px;
   color: #f4f4f4;
-  background-color: #000;
-  -webkit-box-shadow: 1px 1px 5px 0px rgba(90, 90, 90, 0.75);
-  -moz-box-shadow: 1px 1px 5px 0px rgba(90, 90, 90, 0.75);
-  box-shadow: 1px 1px 3px 0px rgba(90, 90, 90, 0.75);
+  background-color: #010101;
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(90, 90, 90, 0.75);
+  -moz-box-shadow: 0px 1px 3px 0px rgba(90, 90, 90, 0.75);
+  box-shadow: 0px 1px 3px 0px rgba(90, 90, 90, 0.75);
   position: relative;
   width: 100%;
 `;
@@ -73,7 +74,7 @@ export const ProductBtn = styled.button`
   padding: 0.3rem 1rem;
   border: none;
   background: #e31837;
-  color: #fff;
+  color: #e6e6e6;
   transition: 0.2 ease-out;
   font-size: 1.1rem;
   text-transform: capitalize;
@@ -84,7 +85,7 @@ export const ProductBtn = styled.button`
   &:hover {
     background: #ffc500;
     transition: all 0.2s ease-out;
-    color: #000;
+    color: #010101;
   }
 `;
 
@@ -92,7 +93,7 @@ export const ProductFooter = styled.div`
   padding: 0.3rem 1rem;
   border: none;
   background: transparent;
-  color: #fff;
+  color: #e6e6e6;
   position: absolute;
   bottom: 1rem;
   right: 0rem;
@@ -103,21 +104,19 @@ export const ProductFooter = styled.div`
   justify-content: space-between;
 `;
 
-export const ViewAllContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+export const ViewAllButton = styled.span`
   cursor: pointer;
-
-  &:hover {
-    background-color: rgba(30, 30, 30, 0.9);
-  }
-`;
-
-export const ViewAllTitle = styled.p`
-  font-weight: 400;
-  font-size: 1.2rem;
   color: #e31837;
+  font-size: 20px;
+  position: absolute;
+  right: 7rem;
+  top: 10rem;
+  padding: 5px 10px;
+  border: #e31837 solid 1px;
+  transition: all 0.15s ease-in;
+
+  :hover {
+    background: #e31837;
+    color: #e6e6e6;
+  }
 `;
