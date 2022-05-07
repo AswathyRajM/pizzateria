@@ -87,7 +87,7 @@ export const ListItem = styled(Link)`
 `;
 
 export const FooterCopyrights = styled.div`
-  background: #e31837;
+  background: ${color.mainColor};
   width: 100%;
   text-align: center;
   padding: 1rem;

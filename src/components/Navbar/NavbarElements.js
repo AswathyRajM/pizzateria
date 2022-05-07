@@ -77,10 +77,6 @@ export const NavLink = styled(Link)`
     width: 100%;
     background: ${color.fontWhite};
   }
-
-  p:hover {
-    color: ${color.mainColor};
-  }
 `;
 
 export const Bars = styled(FaPizzaSlice)`
