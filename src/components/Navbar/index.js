@@ -73,15 +73,15 @@ export const Navbar = ({ handleCart }) => {
             </div>
           </NavLink>
           <DropdownWrapper>
-            <NavLink to='/'>
-              <div onMouseOver={handleMenu} onMouseLeave={handleMenuLeave}>
+            <div onMouseOver={handleMenu} onMouseLeave={handleMenuLeave}>
+              <NavLink to='/'>
                 <p>
                   <span>
                     <UserProfile />
                   </span>
                 </p>
-              </div>
-            </NavLink>
+              </NavLink>
+            </div>
             <DropdownMenu>
               {openMenu && (
                 <DropDown

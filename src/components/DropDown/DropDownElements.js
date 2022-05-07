@@ -1,20 +1,30 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-export const DropDownContainer = styled.aside`
+export const DropDownMain = styled.div`
   position: absolute;
   z-index: 999;
-  width: 12rem;
+  width: 11rem;
   height: auto;
+  top: 2.4rem;
+  left: -2 px;
+`;
+
+export const DropDownTransparentContainer = styled.div`
+  width: 100%;
+  height: 10px;
+  background: transparent;
+`;
+
+export const DropDownContainer = styled.aside`
   background: #e31837;
   color: #fff;
   display: grid;
   align-items: center;
   justify-content: center;
-  top: 4rem;
+
   transition: 0.3s ease-in-out;
   border-radius: 2px;
-  // right: 15.5rem;
 
   @media screen and (max-width: 400px) {
     width: 100%;
