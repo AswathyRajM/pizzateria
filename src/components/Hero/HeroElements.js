@@ -18,10 +18,11 @@ export const HeroContent = styled.div`
   max-height: 100%;
   padding: 0rem calc((100vw - 1200px) / 2);
   letter-spacing: 1px;
+  padding: 1rem 0;
 
   @media only screen and (max-width: 728px) {
-    height: 70vh;
-    max-height: 45vh;
+    height: 50vh;
+    max-height: 50vh;
   }
 `;
 
@@ -41,6 +42,7 @@ export const HeroItems = styled.div`
 
   @media screen and (max-width: 728px) {
     width: 100vw;
+    margin-top: 2rem;
   }
 `;
 

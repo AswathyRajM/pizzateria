@@ -57,7 +57,7 @@ export const Navbar = ({ handleCart, className }) => {
 
   const Navlinks = (
     <>
-      <NavLink scrolly={scrolly} to='/'>
+      <NavLink scrolly={scrolly} to='/' style={{ marginTop: "2rem" }}>
         <div>
           <p>All</p>
         </div>
