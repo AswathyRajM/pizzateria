@@ -9,7 +9,7 @@ export const HeroContainer = styled.div`
   background-size: cover;
 
   @media only screen and (max-width: 728px) {
-    height: 42vh;
+    height: fit-content;
   }
 `;
 
@@ -20,8 +20,8 @@ export const HeroContent = styled.div`
   letter-spacing: 1px;
 
   @media only screen and (max-width: 728px) {
-    height: 75vh;
-    max-height: 50vh;
+    height: 70vh;
+    max-height: 45vh;
   }
 `;
 
@@ -66,9 +66,13 @@ export const HeroBtn = styled.button`
   transition: 0.2s ease-out;
 
   &:hover {
-    background: #ffc500;
+    background: ${color.mainColor};
     transition: 0.2 ease-out;
     cursor: pointer;
     color: ${color.mainBlack};
+  }
+
+  @media only screen and (max-width: 728px) {
+    padding: 0.8rem 2rem;
   }
 `;
