@@ -30,6 +30,18 @@ export const FooterContainer = styled.div`
       max-width: 25rem;
     }
   }
+  @media only screen and (max-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 1.5rem;
+    height: 50vh;
+
+    > * {
+      &:nth-child(2) {
+        grid-column: 2 / span 3;
+      }
+    }
+  }
 `;
 
 export const FooterSection = styled.div`
@@ -37,6 +49,11 @@ export const FooterSection = styled.div`
   padding-right: 2rem;
   padding-top: 1rem;
   height: 100%;
+  @media only screen and (max-width: 768px) {
+    padding-right: 0;
+    padding-top: 0;
+    height: auto;
+  }
 `;
 
 export const FooterLogo = styled(Link)`
@@ -46,6 +63,7 @@ export const FooterLogo = styled(Link)`
   display: flex;
   align-items: center;
   text-decoration: none;
+  margin-bottom: 1rem;
 `;
 
 export const SectionHeader = styled.h4`

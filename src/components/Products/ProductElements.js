@@ -14,7 +14,7 @@ export const ProductsHeading = styled.h1`
   font-size: clamp(2rem, 2.5vw, 3rem);
   text-align: center;
   margin-bottom: 5rem;
-  color: ${color.fontHeading}; ;
+  color: ${color.fontHeading};
 `;
 
 export const Productwrapper = styled.div`
@@ -24,6 +24,10 @@ export const Productwrapper = styled.div`
   grid-column-gap: 1.5rem;
   grid-row-gap: 1.5rem;
   margin: 0 2rem;
+
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 
 export const ProductCard = styled.div`

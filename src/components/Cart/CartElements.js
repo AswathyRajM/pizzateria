@@ -15,9 +15,9 @@ export const CartContainer = styled.aside`
   transition: 0.3s ease-in-out;
   right: ${({ openCart }) => (openCart ? "0" : "-2000px")};
 
-  @media screen and (max-width: 400px) {
-    width: 100%;
-    height: 100%;
+  @media screen and (max-width: 768px) {
+    width: 80vw;
+    height: 100vh;
   }
 `;
 
@@ -29,14 +29,13 @@ export const Container = styled.div`
   align-items: center;
   transition: 0.3s ease-in-out;
 
-  @media screen and (max-width: 400px) {
-    width: 100%;
-    height: 100%;
+  @media screen and (max-width: 768px) {
+    width: 80vw;
   }
 `;
 
 export const CloseIcon = styled(FaTimes)`
-  color: ${color.mainBlack}; ;
+  color: ${color.mainBlack};
 `;
 
 export const Icon = styled.div`
@@ -62,6 +61,9 @@ export const CartHeading = styled.h4`
   font-weight: 400;
   margin-top: 2rem;
   margin-left: 2rem;
+  @media screen and (max-width: 768px) {
+    margin-left: 12vw;
+  }
 `;
 
 export const ItemName = styled.p`
