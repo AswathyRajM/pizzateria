@@ -39,7 +39,7 @@ export const HeroItems = styled.div`
   line-height: 1;
   font-weight: bold;
 
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 728px) {
     width: 100vw;
   }
 `;

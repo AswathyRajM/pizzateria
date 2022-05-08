@@ -4,21 +4,39 @@ import { FaPizzaSlice } from "react-icons/fa";
 import { FaUserCircle } from "react-icons/fa";
 import * as color from "../../utils/variables";
 
-export const Nav = styled.nav`
-  max-height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  font-weight: 700;
-  padding: 2rem 3rem;
-  position: fixed;
-  z-index: 999;
+export const NavWrap = styled.div`
   background: ${({ scrolly }) =>
     scrolly > 1
       ? `${color.mainColor}`
       : "linear-gradient(to bottom, #000, #0003 70%, #0000)"};
   transition: background 1s top;
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 3rem;
+
+  @media only screen and (max-width: 728px) {
+    padding: 2rem 1rem;
+  }
+`;
+
+export const Nav = styled.nav`
+  max-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1600px;
+  width: 100%;
+  font-weight: 700;
+  position: fixed;
+  z-index: 999;
+
+  @media only screen and (max-width: 728px) {
+    padding: 1rem;
+    justify-content: space-around;
+  }
 `;
 
 export const NavLogo = styled(Link)`
@@ -29,11 +47,10 @@ export const NavLogo = styled(Link)`
   text-decoration: none;
   letter-spacing: 1px;
   z-index: 100;
+  padding-left: 1rem;
 
-  @media screen and (max-width: 400px) {
-    position: absolute;
-    top: 10px;
-    left: 25px;
+  @media only screen and (max-width: 728px) {
+    padding: 0rem;
   }
 `;
 
@@ -41,7 +58,7 @@ export const NavLinks = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 1rem;
+  margin-left: 1rem;
   font-size: 1rem;
   font-weight: 500;
   height: 100%;
@@ -49,6 +66,7 @@ export const NavLinks = styled.div`
 
   @media only screen and (max-width: 728px) {
     display: none;
+    margin-left: 10px;
   }
 `;
 
@@ -60,6 +78,10 @@ export const NavLink = styled(Link)`
   padding: 0 1.5rem;
   margin-top: 1rem;
   letter-spacing: 1px;
+
+  @media only screen and (max-width: 728px) {
+    padding: 0 0.5rem;
+  }
 
   p {
     text-transform: capitalize;
@@ -131,7 +153,6 @@ export const HamburgerMenu = styled.div`
   margin-right: 0;
   display: none;
   z-index: 10;
-  margin-top: 1rem;
   @media only screen and (max-width: 728px) {
     display: flex;
     align-items: center;
@@ -165,7 +186,7 @@ export const NavListContainer = styled.div`
 
 export const NavList = styled.div`
   display: none;
-  align-items: cneter;
+  align-items: center;
   justify-content: space-around;
   @media only screen and (max-width: 728px) {
     display: flex;

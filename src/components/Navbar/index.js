@@ -13,6 +13,7 @@ import {
   HamburgerMenu,
   NavList,
   NavListContainer,
+  NavWrap,
 } from "./NavbarElements";
 import { DropDown } from "../DropDown";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -85,8 +86,8 @@ export const Navbar = ({ handleCart, className }) => {
   );
 
   return (
-    <>
-      <Nav scrolly={scrolly}>
+    <NavWrap scrolly={scrolly}>
+      <Nav>
         <NavLogo to='/'>Pizzateria</NavLogo>
         <NavList>
           <DropdownWrapper>
@@ -161,6 +162,6 @@ export const Navbar = ({ handleCart, className }) => {
           </NavLink>
         </NavLinks>
       </Nav>
-    </>
+    </NavWrap>
   );
 };

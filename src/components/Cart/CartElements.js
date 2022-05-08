@@ -15,7 +15,7 @@ export const CartContainer = styled.aside`
   transition: 0.3s ease-in-out;
   right: ${({ openCart }) => (openCart ? "0" : "-2000px")};
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 728px) {
     width: 80vw;
     height: 100vh;
   }
@@ -29,7 +29,7 @@ export const Container = styled.div`
   align-items: center;
   transition: 0.3s ease-in-out;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 728px) {
     width: 80vw;
   }
 `;
@@ -61,7 +61,7 @@ export const CartHeading = styled.h4`
   font-weight: 400;
   margin-top: 2rem;
   margin-left: 2rem;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 728px) {
     margin-left: 12vw;
   }
 `;

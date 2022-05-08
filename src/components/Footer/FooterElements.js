@@ -2,16 +2,27 @@ import styled from "styled-components";
 import { NavLink as Link } from "react-router-dom";
 import * as color from "../../utils/variables";
 
+export const FooterWrap = styled.div`
+  background: ${color.mainBlack};
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
 export const Footer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   color: ${color.fontWhite};
-  background: ${color.mainBlack};
   height: auto;
-  min-height: 40vh;
-  width: 100%;
+  height: max-content;
+  width: 1600px;
+
+  @media only screen and (max-width: 768px) {
+    height: max-content;
+  }
 `;
 
 export const FooterContainer = styled.div`
@@ -19,7 +30,7 @@ export const FooterContainer = styled.div`
   align-items: flex-start;
   justify-content: space-between;
   height: auto;
-  min-height: 40vh;
+  height: max-content;
   width: 100%;
   padding: 3rem;
   > * {
@@ -30,15 +41,34 @@ export const FooterContainer = styled.div`
       max-width: 25rem;
     }
   }
-  @media only screen and (max-width: 768px) {
+
+  @media only screen and (max-width: 728px) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-row-gap: 1.5rem;
-    height: 50vh;
+    height: max-content;
 
     > * {
       &:nth-child(2) {
         grid-column: 2 / span 3;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr !important;
+    grid-row-gap: 1.5rem;
+    grid-column-gap: 1.5rem;
+    height: max-content;
+
+    > * {
+      &:nth-child(1),
+      :nth-child(2) {
+        grid-column: 1 / span 3;
+      }
+      &:nth-child(2) {
+        max-width: 100%;
       }
     }
   }
@@ -49,7 +79,7 @@ export const FooterSection = styled.div`
   padding-right: 2rem;
   padding-top: 1rem;
   height: 100%;
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 72px) {
     padding-right: 0;
     padding-top: 0;
     height: auto;
@@ -106,7 +136,7 @@ export const ListItem = styled(Link)`
 
 export const FooterCopyrights = styled.div`
   background: ${color.mainColor};
-  width: 100%;
+  width: 100vw;
   text-align: center;
   padding: 1rem;
 `;

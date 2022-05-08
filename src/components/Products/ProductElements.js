@@ -1,11 +1,22 @@
 import styled from "styled-components";
 import * as color from "../../utils/variables";
 
-export const ProductsContainer = styled.div`
-  max-width: 100vw;
-  min-height: 100vh;
-  padding: 5rem;
+export const ProductWrap = styled.div`
   background: ${color.bgBlack};
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+
+  @media only screen and (max-width: 768px) {
+    padding: 1rem;
+  }
+`;
+
+export const ProductsContainer = styled.div`
+  max-width: 1600px;
+  min-height: 100%;
   color: ${color.fontWhite};
   position: relative;
 `;
@@ -15,6 +26,10 @@ export const ProductsHeading = styled.h1`
   text-align: center;
   margin-bottom: 5rem;
   color: ${color.fontHeading};
+
+  @media only screen and (max-width: 768px) {
+    margin-bottom: 2rem;
+  }
 `;
 
 export const Productwrapper = styled.div`
@@ -27,6 +42,7 @@ export const Productwrapper = styled.div`
 
   @media only screen and (max-width: 768px) {
     grid-template-columns: repeat(1, 1fr);
+    margin: 0 1rem;
   }
 `;
 
@@ -41,12 +57,21 @@ export const ProductCard = styled.div`
   box-shadow: 0px 1px 3px 0px rgba(90, 90, 90, 0.75);
   position: relative;
   width: 100%;
+
+  @media only screen and (max-width: 768px) {
+    height: 180px;
+  }
 `;
 
 export const ProductImg = styled.img`
   max-width: 50%;
   margin: 1rem;
   cursor: pointer;
+
+  @media only screen and (max-width: 768px) {
+    max-width: 45%;
+    margin: 0.5rem;
+  }
 `;
 
 export const ProductInfo = styled.div`
@@ -104,9 +129,13 @@ export const ProductFooter = styled.div`
   right: 0rem;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
   font-size: 1.1rem;
-  justify-content: space-between;
+
+  @media only screen and (max-width: 768px) {
+    padding-bottom: 0;
+  }
 `;
 
 export const ViewAllButton = styled.span`
