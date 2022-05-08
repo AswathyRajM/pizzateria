@@ -79,7 +79,7 @@ export const FooterSection = styled.div`
   padding-right: 2rem;
   padding-top: 1rem;
   height: 100%;
-  @media only screen and (max-width: 72px) {
+  @media only screen and (max-width: 728px) {
     padding-right: 0;
     padding-top: 0;
     height: auto;
