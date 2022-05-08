@@ -14,8 +14,8 @@ export const Nav = styled.nav`
   padding: 2rem 3rem;
   position: fixed;
   z-index: 999;
-  background: ${({ scrollY }) =>
-    scrollY > 1
+  background: ${({ scrolly }) =>
+    scrolly > 1
       ? `${color.mainColor}`
       : "linear-gradient(to bottom, #000, #0003 70%, #0000)"};
   transition: background 1s top;
@@ -78,8 +78,8 @@ export const NavLink = styled(Link)`
   p:hover:after {
     width: 100%;
     background: ${color.fontWhite};
-    background: ${({ scrollY }) =>
-      scrollY > 1 ? `${color.fontWhite}` : `${color.mainColor}`};
+    background: ${({ scrolly }) =>
+      scrolly > 1 ? `${color.fontWhite}` : `${color.mainColor}`};
   }
 `;
 
