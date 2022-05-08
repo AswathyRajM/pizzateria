@@ -16,6 +16,8 @@ export const NavWrap = styled.div`
   align-items: center;
   justify-content: center;
   padding: 2rem 3rem;
+  z-index: 999;
+  position: fixed;
 
   @media only screen and (max-width: 728px) {
     padding: 2rem 1rem;
