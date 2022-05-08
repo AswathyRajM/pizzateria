@@ -18,7 +18,7 @@ export const Nav = styled.nav`
     scrollY > 1
       ? `${color.mainColor}`
       : "linear-gradient(to bottom, #000, #0003 70%, #0000)"};
-  transition: background 0.5s;
+  transition: background 1s top;
 `;
 
 export const NavLogo = styled(Link)`
@@ -28,6 +28,7 @@ export const NavLogo = styled(Link)`
   align-items: center;
   text-decoration: none;
   letter-spacing: 1px;
+  z-index: 100;
 
   @media screen and (max-width: 400px) {
     position: absolute;
@@ -44,9 +45,10 @@ export const NavLinks = styled.div`
   font-size: 1rem;
   font-weight: 500;
   height: 100%;
+  z-index: 999;
 
-  @media screen and (max-width: 400px) {
-    width: auto;
+  @media only screen and (max-width: 728px) {
+    display: none;
   }
 `;
 
@@ -83,6 +85,7 @@ export const NavLink = styled(Link)`
 
 export const Bars = styled(FaPizzaSlice)`
   font-size: 2rem;
+  z-index: 999;
 `;
 
 export const UserProfile = styled(FaUserCircle)`
@@ -117,4 +120,54 @@ export const Notification = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+`;
+
+export const HamburgerMenu = styled.div`
+  font-size: 2rem;
+  color: ${color.fontWhite};
+  font-weight: 500;
+  height: 100%;
+  margin: 0 1.5rem;
+  margin-right: 0;
+  display: none;
+  z-index: 10;
+  margin-top: 1rem;
+  @media only screen and (max-width: 728px) {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+  }
+`;
+
+export const NavListContainer = styled.div`
+  display: ${({ hamburgerOpened }) => (hamburgerOpened ? "flex" : "none")};
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: -1rem;
+  z-index: -1;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  background: ${color.mainColor};
+  color: ${color.fontWhite};
+  overflow-y: hidden;
+  height: fit-content;
+  transition-property: height;
+  transition-duration: 10s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  padding: 2rem;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  transition: height 3s top;
+`;
+
+export const NavList = styled.div`
+  display: none;
+  align-items: cneter;
+  justify-content: space-around;
+  @media only screen and (max-width: 728px) {
+    display: flex;
+  }
 `;
