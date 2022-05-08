@@ -1,4 +1,4 @@
-export const mainColor = "#BB000E";
+export const mainColor = "#E8433A";
 export const mainBlack = "#010101";
 export const bgBlack = "#150f0f";
 export const fontWhite = "#e6e6e6";

@@ -76,6 +76,8 @@ export const NavLink = styled(Link)`
   p:hover:after {
     width: 100%;
     background: ${color.fontWhite};
+    background: ${({ scrollY }) =>
+      scrollY > 1 ? `${color.fontWhite}` : `${color.mainColor}`};
   }
 `;
 

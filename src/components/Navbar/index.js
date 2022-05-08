@@ -5,8 +5,6 @@ import {
   NavLogo,
   NavLink,
   NavLinks,
-  // Downarrow,
-  // Flex,
   BarsWrapper,
   UserProfile,
   DropdownWrapper,
@@ -52,29 +50,34 @@ export const Navbar = ({ handleCart }) => {
       <Nav scrollY={scrollY}>
         <NavLogo to='/'>Pizzateria</NavLogo>
         <NavLinks>
-          <NavLink to='/'>
+          <NavLink scrollY={scrollY} to='/'>
+            <div>
+              <p>All</p>
+            </div>
+          </NavLink>
+          <NavLink scrollY={scrollY} to='/'>
             <div>
               <p>Meals & Combos</p>
             </div>
           </NavLink>
-          <NavLink to='/'>
+          <NavLink scrollY={scrollY} to='/'>
             <div>
               <p>Non-Veg Pizaa</p>
             </div>
           </NavLink>
-          <NavLink to='/'>
+          <NavLink scrollY={scrollY} to='/'>
             <div>
               <p>Veg Pizza</p>
             </div>
           </NavLink>
-          <NavLink to='/'>
+          <NavLink scrollY={scrollY} to='/'>
             <div>
               <p>Beverages & Desserts</p>
             </div>
           </NavLink>
           <DropdownWrapper>
             <div onMouseOver={handleMenu} onMouseLeave={handleMenuLeave}>
-              <NavLink to='/'>
+              <NavLink scrollY={scrollY} to='/'>
                 <p>
                   <span>
                     <UserProfile />
@@ -92,7 +95,7 @@ export const Navbar = ({ handleCart }) => {
             </DropdownMenu>
           </DropdownWrapper>
 
-          <NavLink to='/'>
+          <NavLink scrollY={scrollY} to='/'>
             <BarsWrapper onClick={handleCart}>
               <Notification scrollY={scrollY}>
                 <span>4</span>
