@@ -29,7 +29,6 @@ export const FooterContainer = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  height: auto;
   height: max-content;
   width: 100%;
   padding: 3rem;
@@ -47,6 +46,7 @@ export const FooterContainer = styled.div`
     grid-template-columns: 1fr 1fr 1fr;
     grid-row-gap: 1.5rem;
     height: max-content;
+    padding: 1.5rem;
 
     > * {
       &:nth-child(2) {
