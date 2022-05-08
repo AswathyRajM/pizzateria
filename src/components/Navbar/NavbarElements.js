@@ -108,10 +108,18 @@ export const NavLink = styled(Link)`
 export const Bars = styled(FaPizzaSlice)`
   font-size: 2rem;
   z-index: 999;
+
+  @media only screen and (max-width: 728px) {
+    font-size: 1.5rem;
+  }
 `;
 
 export const UserProfile = styled(FaUserCircle)`
   font-size: 2rem;
+
+  @media only screen and (max-width: 728px) {
+    font-size: 1.5rem;
+  }
 `;
 
 export const DropdownWrapper = styled.div`
@@ -158,6 +166,7 @@ export const HamburgerMenu = styled.div`
     align-items: center;
     justify-content: flex-end;
     cursor: pointer;
+    font-size: 1.5rem;
   }
 `;
 
