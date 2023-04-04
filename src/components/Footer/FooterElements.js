@@ -1,10 +1,11 @@
-import styled from "styled-components";
-import { NavLink as Link } from "react-router-dom";
-import * as color from "../../utils/variables";
+import styled from 'styled-components';
+import { NavLink as Link } from 'react-router-dom';
+import * as color from '../../utils/variables';
 
 export const FooterWrap = styled.div`
   background: ${color.mainBlack};
   width: 100%;
+  overflow-x: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -119,7 +120,7 @@ export const ListItem = styled(Link)`
   width: fit-content;
 
   :after {
-    content: "";
+    content: '';
     display: block;
     margin: auto;
     height: 3px;

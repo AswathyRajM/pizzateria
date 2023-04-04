@@ -1,9 +1,9 @@
-import styled from "styled-components";
-import * as color from "../../utils/variables";
+import styled from 'styled-components';
+import * as color from '../../utils/variables';
 
 export const FeatureContainer = styled.div`
   background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
-    url("https://ik.imagekit.io/aswathy/images/featured_Q2wsv02eL.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651588578882");
+    url('https://ik.imagekit.io/aswathy/images/featured_Q2wsv02eL.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651588578882');
   height: 100vh;
   max-height: 500px;
   background-position: center;
@@ -32,7 +32,7 @@ export const FeatureBtn = styled.button`
   color: ${color.mainBlack};
   transition: 0.2s ease-out;
   margin-top: 1.5rem;
-
+  over-flow: hidden;
   &:hover {
     color: ${color.fontWhite};
     background: ${color.mainColor};

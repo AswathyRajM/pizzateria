@@ -1,13 +1,13 @@
-import styled from "styled-components";
-import * as color from "../../utils/variables";
+import styled from 'styled-components';
+import * as color from '../../utils/variables';
 
 export const HeroContainer = styled.div`
   background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
-    url("https://ik.imagekit.io/aswathy/images/pizza1_DKJ0ln2eg.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651588579174");
+    url('https://ik.imagekit.io/aswathy/images/pizza1_DKJ0ln2eg.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651588579174');
   height: 100vh;
   background-position: center;
   background-size: cover;
-
+  overflow-x: hidden;
   @media only screen and (max-width: 728px) {
     height: fit-content;
   }
@@ -16,9 +16,9 @@ export const HeroContainer = styled.div`
 export const HeroContent = styled.div`
   height: calc(100vh-80px);
   max-height: 100%;
-  padding: 0rem calc((100vw - 1200px) / 2);
+  padding: 0 calc((100vw - 1200px) / 2);
   letter-spacing: 1px;
-  padding: 1rem 0;
+  overflow-x: hidden;
 
   @media only screen and (max-width: 728px) {
     height: 50vh;

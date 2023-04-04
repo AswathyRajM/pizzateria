@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import FadeIn from "react-fade-in";
-import { Cart } from "../Cart";
-import { Navbar } from "../Navbar";
+import React, { useState } from 'react';
+import FadeIn from 'react-fade-in';
+import { Cart } from '../Cart';
+import { Navbar } from '../Navbar';
 import {
   HeroContainer,
   HeroContent,
@@ -9,7 +9,7 @@ import {
   HeroH1,
   HeroP,
   HeroBtn,
-} from "./HeroElements";
+} from './HeroElements';
 
 export const Hero = () => {
   const [openCart, setCartOpen] = useState(false);
@@ -19,18 +19,20 @@ export const Hero = () => {
   };
 
   return (
-    <HeroContainer>
-      <Navbar handleCart={handleCart} />
-      <Cart openCart={openCart} handleCart={handleCart} />
-      <HeroContent>
-        <HeroItems>
+    <FadeIn>
+      <HeroContainer>
+        <Navbar handleCart={handleCart} />
+        <Cart openCart={openCart} handleCart={handleCart} />
+        <HeroContent>
           <FadeIn>
-            <HeroH1>Yummy Pizza</HeroH1>
-            <HeroP>All You Need is Love & Pizza</HeroP>
-            <HeroBtn>Place Order</HeroBtn>
+            <HeroItems>
+              <HeroH1>Yummy Pizza</HeroH1>
+              <HeroP>All You Need is Love & Pizza</HeroP>
+              <HeroBtn>Place Order</HeroBtn>
+            </HeroItems>
           </FadeIn>
-        </HeroItems>
-      </HeroContent>
-    </HeroContainer>
+        </HeroContent>
+      </HeroContainer>
+    </FadeIn>
   );
 };
