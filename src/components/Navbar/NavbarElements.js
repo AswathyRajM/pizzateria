@@ -1,14 +1,14 @@
-import styled from "styled-components";
-import { NavLink as Link } from "react-router-dom";
-import { FaPizzaSlice } from "react-icons/fa";
-import { FaUserCircle } from "react-icons/fa";
-import * as color from "../../utils/variables";
+import styled from 'styled-components';
+import { NavLink as Link } from 'react-router-dom';
+import { FaPizzaSlice } from 'react-icons/fa';
+import { FaUserCircle } from 'react-icons/fa';
+import * as color from '../../utils/variables';
 
 export const NavWrap = styled.div`
   background: ${({ scrolly }) =>
     scrolly > 1
       ? `${color.mainColor}`
-      : "linear-gradient(to bottom, #000, #0003 70%, #0000)"};
+      : 'linear-gradient(to bottom, #000, #0003 70%, #0000)'};
   transition: background 1s top;
 
   width: 100%;
@@ -90,7 +90,7 @@ export const NavLink = styled(Link)`
   }
 
   p:after {
-    content: "";
+    content: '';
     display: block;
     margin: auto;
     height: 2px;
@@ -101,9 +101,9 @@ export const NavLink = styled(Link)`
 
   p:hover:after {
     width: 100%;
-    background: ${color.fontWhite};
     background: ${({ scrolly }) =>
-      scrolly > 1 ? `${color.fontWhite}` : `${color.mainColor}`};
+      scrolly > 1 ? `${color.yellow}` : `${color.mainColor}`};
+    background: ${color.yellow};
   }
 `;
 
@@ -173,7 +173,7 @@ export const HamburgerMenu = styled.div`
 `;
 
 export const NavListContainer = styled.div`
-  display: ${({ hamburgerOpened }) => (hamburgerOpened ? "flex" : "none")};
+  display: ${({ hamburgerOpened }) => (hamburgerOpened ? 'flex' : 'none')};
   position: absolute;
   width: 100%;
   left: 0;

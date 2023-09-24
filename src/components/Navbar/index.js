@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 import {
   Bars,
   Nav,
@@ -14,13 +14,14 @@ import {
   NavList,
   NavListContainer,
   NavWrap,
-} from "./NavbarElements";
-import { DropDown } from "../DropDown";
-import { GiHamburgerMenu } from "react-icons/gi";
+} from './NavbarElements';
+import { DropDown } from '../DropDown';
+import { GiHamburgerMenu } from 'react-icons/gi';
 
 export const Navbar = ({ handleCart, className }) => {
   const [openMenu, setMenuOpen] = useState(false);
   const [scrolly, setScrolly] = useState(0);
+  const [active, setActive] = useState(0);
   const [hamburgerOpened, setHamburgerOpened] = useState(false);
 
   const handleDropdown = () => {
@@ -49,15 +50,15 @@ export const Navbar = ({ handleCart, className }) => {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
   const Navlinks = (
     <>
-      <NavLink scrolly={scrolly} to='/' style={{ marginTop: "2rem" }}>
+      <NavLink scrolly={scrolly} to='/' style={{ marginTop: '1rem' }}>
         <div>
           <p>All</p>
         </div>
